@@ -1,0 +1,146 @@
+body {
+	padding: 0;
+	margin: 0;
+	background: #EBEBEB;
+	font-family: 'Tangerine', serif;
+	font-size: 12px;
+}
+
+#continer {
+	margin: 6px auto;
+	width: 1020px;
+	padding: 0;
+	background: #EBEBEB;
+	font-family: 'Tangerine', serif;
+	font-size: 12px;
+}
+
+#menu {
+	margin: 0 auto;
+	width: 1050px;
+	padding: 0;
+	background: #EBEBEB;
+	font-family: 'Tangerine', serif;
+	font-size: 12px;
+}
+
+ul, table, h3, h1 {
+	margin: 0;
+	padding: 0;
+}
+
+select.soflow {
+	background-image: url(../images/15xvbd5.png),
+		-webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+	background-position: 97% center;
+	background-repeat: no-repeat;
+	border: 1px solid #AAA;
+	color: #555;
+	font-size: inherit;
+	overflow: hidden;
+	padding: 3px 3px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 120px;
+}
+
+#remainingFees {
+	width: 500px;
+	float: left;
+	background: #EBEBBF;
+	margin: 10px auto;
+	padding: 0 auto;
+}
+
+#nearMonthCompleted {
+	width: 500px;
+	float: right;
+	background: #EBEBBF;
+	margin: 10px auto;
+	padding: 0 auto;
+}
+
+.divHeading {
+	height: 20px;
+	background: rgb(26, 118, 111);
+	padding: 7px;
+}
+
+.filterBy {
+	padding-left: 20px;
+	margin: 5px;
+}
+
+.cssform p {
+	width: 300px;
+	clear: left;
+	margin: 0;
+	padding: 5px 0 8px 0;
+	padding-left: 155px;
+	/*width of left column containing the label elements*/
+	border-bottom: 1px dashed gray;
+}
+
+.cssform p:last-of-type {
+	border-bottom: none;
+}
+
+.cssform label {
+	font-weight: bold;
+	float: left;
+	margin-left: -155px; /*width of left column*/
+	width: 150px;
+	/*width of labels. Should be smaller than left column (155px) to create some right margin*/
+}
+
+.cssform input[type="text"] {
+	/*width of text boxes. IE6 does not understand this attribute*/
+	width: 180px;
+}
+
+.cssform textarea {
+	width: 250px;
+	height: 150px;
+}
+
+/*.threepxfix class below:
+Targets IE6- ONLY. Adds 3 pixel indent for multi-line form contents.
+to account for 3 pixel bug: http://www.positioniseverything.net/explorer/threepxtest.html
+*/
+* html .threepxfix {
+	margin-left: 3px;
+}
+
+@media screen and (max-width: 480px) {
+	/* responsive form settings, when window width is 480px or less */
+	.cssform p {
+		padding-left: 0;
+		width: auto;
+		padding-bottom: 1em;
+	}
+	.cssform label {
+		float: none;
+		display: block;
+		margin-left: 0;
+	}
+	.cssform input[type="text"] {
+		/*width of text boxes. IE6 does not understand this attribute*/
+		width: 95%;
+	}
+	.cssform textarea {
+		width: 95%;
+	}
+}
+
+#registrationForm {
+	margin: 0 auto;
+	padding: 20px 300px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
