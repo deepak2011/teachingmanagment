@@ -13,7 +13,7 @@ public class LoggingAspect {
 	}
 
 	public void logAfter(JoinPoint joinPoint) {
-		//..
+		//...
 	}
 
 	public void logAfterReturning(JoinPoint joinPoint, Object result) {
